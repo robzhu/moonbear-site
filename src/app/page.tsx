@@ -41,6 +41,7 @@ const pricingTiers = [
     cadence: "/month",
     description: "For individuals managing recurring deletion workflows.",
     benefits: [
+      "1 bear",
       "10,000 deletions per month",
       "Deletes common document and image formats: .txt, .pdf, .docx, .jpg, .png",
       "Console access",
@@ -54,6 +55,7 @@ const pricingTiers = [
     cadence: "/month",
     description: "For growing teams that need higher throughput and shared operations.",
     benefits: [
+      "2 bears",
       "100,000 deletions per month",
       "Deletes documents, media, and data exports: .txt, .pdf, .docx, .jpg, .png, .csv, .json, .zip",
       "Console access",
@@ -67,6 +69,7 @@ const pricingTiers = [
     cadence: "for pricing",
     description: "For organizations with advanced governance, security, and billing requirements.",
     benefits: [
+      "Unlimited bears",
       "Unlimited deletion volume",
       "Deletes all supported file types, including regulated and archival formats",
       "Console access",
