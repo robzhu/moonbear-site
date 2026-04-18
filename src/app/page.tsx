@@ -1,18 +1,18 @@
 const highlights = [
   {
-    title: "Instant deploys",
-    value: "2 min",
-    description: "From merge to production without pipeline sprawl.",
+    title: "Agentic First",
+    value: "Built for AI",
+    description: "Infrastructure designed from day one for agentic workloads, automation, and autonomous systems.",
   },
   {
-    title: "Programmable core",
-    value: "API-first",
-    description: "Compute, networking, and policy in one clean surface.",
+    title: "Fast & Cheap AI and Compute",
+    value: "High efficiency",
+    description: "Run AI inference and general compute with lower latency and better economics than legacy cloud stacks.",
   },
   {
-    title: "Operational focus",
-    value: "Zero noise",
-    description: "Minimal tooling for teams that want speed and control.",
+    title: "Instant global deployment",
+    value: "Worldwide in seconds",
+    description: "Ship services close to users everywhere with fast rollout paths across regions and edges.",
   },
 ];
 
@@ -36,16 +36,13 @@ export default function Home() {
         </header>
 
         <div className="flex flex-1 items-center py-8 lg:py-10">
-          <div className="grid w-full gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(360px,0.95fr)] lg:items-center">
+          <div className="flex w-full flex-col gap-12 lg:gap-14">
             <div className="max-w-3xl">
-              <span className="inline-flex rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">
-                Unified cloud platform
-              </span>
-              <h1 className="mt-6 max-w-4xl text-5xl font-semibold tracking-[-0.05em] text-balance sm:text-6xl lg:text-[5.5rem] lg:leading-[0.94]">
-                Infrastructure, reduced to the essentials.
+              <h1 className="my-14 max-w-4xl text-5xl font-semibold tracking-[-0.05em] text-balance sm:my-16 sm:text-6xl lg:text-[5.5rem] lg:leading-[0.94]">
+                Cloud, Done Right
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 sm:text-xl">
-                Moonbear gives teams a calm, modern cloud for compute, networking, storage, and shipping software fast.
+              <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600 sm:text-xl">
+                Everything you need, nothing you don&apos;t.
               </p>
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <a
@@ -74,48 +71,34 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="grid gap-4 p-5 lg:grid-cols-2">
-                <div className="rounded-[1.5rem] bg-slate-950 p-6 text-white lg:col-span-2">
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <p className="text-sm text-slate-400">Why Moonbear</p>
-                      <p className="mt-3 text-3xl font-semibold tracking-tight">
-                        Fast enough for product teams, calm enough for ops.
-                      </p>
-                    </div>
-                    <div className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">
-                      All systems operational
-                    </div>
+              <div className="p-5">
+                <div className="flex flex-col gap-4 border-b border-slate-200/80 pb-5 sm:flex-row sm:items-end sm:justify-between">
+                  <div>
+                    <p className="text-sm font-medium text-slate-500">Why Moonbear</p>
+                    <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
+                      Fast enough for product teams, calm enough for ops.
+                    </p>
+                  </div>
+                  <div className="rounded-full bg-slate-950 px-3 py-1 text-xs font-medium text-white">
+                    All systems operational
                   </div>
                 </div>
 
-                {highlights.map((item) => (
-                  <article
-                    key={item.title}
-                    className="rounded-[1.5rem] bg-slate-50 p-6 lg:odd:col-span-1 lg:even:col-span-1"
-                  >
-                    <p className="text-sm font-medium text-slate-500">{item.title}</p>
-                    <p className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
-                      {item.value}
-                    </p>
-                    <p className="mt-2 max-w-xs text-sm leading-6 text-slate-600">
-                      {item.description}
-                    </p>
-                  </article>
-                ))}
-
-                <div className="rounded-[1.5rem] border border-slate-200 p-6 lg:col-span-2">
-                  <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-                    <div>
-                      <p className="text-sm font-medium text-slate-500">Operational model</p>
-                      <p className="mt-2 text-xl font-semibold tracking-tight text-slate-950">
-                        Fewer surfaces, fewer handoffs, more momentum.
+                <div className="mt-5 grid gap-4 lg:grid-cols-3">
+                  {highlights.map((item) => (
+                    <article
+                      key={item.title}
+                      className="rounded-[1.5rem] bg-slate-50 p-5"
+                    >
+                      <p className="text-sm font-medium text-slate-500">{item.title}</p>
+                      <p className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
+                        {item.value}
                       </p>
-                    </div>
-                    <p className="max-w-sm text-sm leading-6 text-slate-600">
-                      Moonbear combines the core advantages of the old feature cards and the why section into one minimal snapshot.
-                    </p>
-                  </div>
+                      <p className="mt-2 text-sm leading-6 text-slate-600">
+                        {item.description}
+                      </p>
+                    </article>
+                  ))}
                 </div>
               </div>
             </div>
