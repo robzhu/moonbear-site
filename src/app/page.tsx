@@ -1,18 +1,64 @@
 const highlights = [
   {
-    title: "Agentic First",
-    value: "Built for AI",
-    description: "Infrastructure designed from day one for agentic workloads, automation, and autonomous systems.",
+    title: "Centralized deletion workflows",
+    value: "Policy-driven operations",
+    description: "Route deletion requests through a managed platform with standardized handling, auditability, and operational consistency.",
   },
   {
-    title: "Fast & Cheap AI and Compute",
-    value: "High efficiency",
-    description: "Run AI inference and general compute with lower latency and better economics than legacy cloud stacks.",
+    title: "Enterprise-ready controls",
+    value: "Designed for teams",
+    description: "Coordinate deletion processes across products, business units, and stakeholders from a single administrative surface.",
   },
   {
-    title: "Instant global deployment",
-    value: "Worldwide in seconds",
-    description: "Ship services close to users everywhere with fast rollout paths across regions and edges.",
+    title: "Global service coverage",
+    value: "Available wherever you operate",
+    description: "Support distributed organizations with a deletion platform built to serve teams across regions and environments.",
+  },
+];
+
+const pricingTiers = [
+  {
+    name: "Personal",
+    price: "$9.99",
+    cadence: "/month",
+    description: "For individuals managing recurring deletion workflows.",
+    benefits: [
+      "10,000 deletions per month",
+      "Deletes common document and image formats: .txt, .pdf, .docx, .jpg, .png",
+      "Console access",
+      "API access",
+      "SDK access",
+    ],
+  },
+  {
+    name: "Professional",
+    price: "$29.99",
+    cadence: "/month",
+    description: "For growing teams that need higher throughput and shared operations.",
+    benefits: [
+      "100,000 deletions per month",
+      "Deletes documents, media, and data exports: .txt, .pdf, .docx, .jpg, .png, .csv, .json, .zip",
+      "Console access",
+      "API access",
+      "SDK access",
+    ],
+  },
+  {
+    name: "Enterprise",
+    price: "Contact Us",
+    cadence: "for pricing",
+    description: "For organizations with advanced governance, security, and billing requirements.",
+    benefits: [
+      "Unlimited deletion volume",
+      "Deletes all supported file types, including regulated and archival formats",
+      "Console access",
+      "API access",
+      "SDK access",
+      "SAML",
+      "HIPAA compliance",
+      "Audit trails",
+      "Enhanced invoicing",
+    ],
   },
 ];
 
@@ -27,35 +73,38 @@ export default function Home() {
             </div>
             <div>
               <p className="text-lg font-semibold tracking-tight">Moonbear</p>
-              <p className="text-sm text-slate-500">Cloud infrastructure, simplified.</p>
+              <p className="text-sm text-slate-500">Data Deletion Service</p>
             </div>
           </div>
           <div className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm text-slate-600 backdrop-blur">
-            Built for modern product teams
+            Managed deletion for modern teams
           </div>
         </header>
 
         <div className="flex flex-1 items-center py-8 lg:py-10">
           <div className="flex w-full flex-col gap-12 lg:gap-14">
             <div className="max-w-3xl">
-              <h1 className="my-14 max-w-4xl text-5xl font-semibold tracking-[-0.05em] text-balance sm:my-16 sm:text-6xl lg:text-[5.5rem] lg:leading-[0.94]">
-                Cloud, Done Right
+              <p className="mt-14 text-3xl font-semibold tracking-[-0.04em] text-slate-700 sm:mt-16 sm:text-4xl lg:text-5xl">
+                Moonbear
+              </p>
+              <h1 className="mt-4 max-w-4xl text-5xl font-semibold tracking-[-0.05em] text-balance sm:text-6xl lg:text-[5.5rem] lg:leading-[0.94]">
+                Data Deletion Service
               </h1>
               <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600 sm:text-xl">
-                Everything you need, nothing you don&apos;t.
+                Send us your data and we&apos;ll delete it for you.
               </p>
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#overview"
                   className="inline-flex h-12 items-center justify-center rounded-full bg-slate-950 px-6 text-sm font-medium text-white transition hover:bg-slate-800"
                 >
-                  View platform overview
+                  Explore the platform
                 </a>
                 <a
-                  href="#overview"
+                  href="#pricing"
                   className="inline-flex h-12 items-center justify-center rounded-full border border-slate-200 bg-white px-6 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
                 >
-                  See why Moonbear
+                  View pricing
                 </a>
               </div>
             </div>
@@ -65,9 +114,9 @@ export default function Home() {
               className="overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/90 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur"
             >
               <div className="border-b border-slate-200/80 px-6 py-5">
-                <p className="text-sm font-medium text-slate-500">Moonbear control plane</p>
+                <p className="text-sm font-medium text-slate-500">Moonbear deletion console</p>
                 <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
-                  One interface for deploys, scale, and operations.
+                  One interface for intake, processing, and deletion operations.
                 </p>
               </div>
 
@@ -76,11 +125,11 @@ export default function Home() {
                   <div>
                     <p className="text-sm font-medium text-slate-500">Why Moonbear</p>
                     <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
-                      Fast enough for product teams, calm enough for ops.
+                      A streamlined approach to deletion operations at organizational scale.
                     </p>
                   </div>
                   <div className="rounded-full bg-slate-950 px-3 py-1 text-xs font-medium text-white">
-                    All systems operational
+                    Service status: Operational
                   </div>
                 </div>
 
@@ -97,6 +146,52 @@ export default function Home() {
                       <p className="mt-2 text-sm leading-6 text-slate-600">
                         {item.description}
                       </p>
+                    </article>
+                  ))}
+                </div>
+
+              </div>
+            </div>
+
+            <div
+              id="pricing"
+              className="overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/90 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur"
+            >
+              <div className="border-b border-slate-200/80 px-6 py-5">
+                <p className="text-sm font-medium text-slate-500">Pricing</p>
+                <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
+                  Flexible plans for every stage of deletion operations.
+                </p>
+                <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
+                  Every plan includes access to the Moonbear console, API, and SDK, with tiered capacity and governance features for larger teams.
+                </p>
+              </div>
+
+              <div className="p-5">
+                <div className="grid gap-4 lg:grid-cols-3">
+                  {pricingTiers.map((tier) => (
+                    <article
+                      key={tier.name}
+                      className="flex h-full flex-col rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6"
+                    >
+                      <p className="text-sm font-medium text-slate-500">{tier.name}</p>
+                      <div className="mt-4 flex min-h-14 items-end gap-2">
+                        <p className="text-4xl font-semibold tracking-tight text-slate-950">
+                          {tier.price}
+                        </p>
+                        <p className="pb-1 text-sm text-slate-500">{tier.cadence}</p>
+                      </div>
+                      <p className="mt-4 min-h-16 text-sm leading-6 text-slate-600">
+                        {tier.description}
+                      </p>
+                      <ul className="mt-6 grid gap-3 text-sm leading-6 text-slate-700">
+                        {tier.benefits.map((benefit) => (
+                          <li key={benefit} className="grid grid-cols-[0.5rem_1fr] items-start gap-x-3">
+                            <span className="mt-2 block h-2 w-2 rounded-full bg-slate-950" />
+                            <span>{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </article>
                   ))}
                 </div>
