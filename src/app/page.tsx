@@ -1,10 +1,4 @@
 export default function Home() {
-  const stats = [
-    { value: "99.99%", label: "platform uptime" },
-    { value: "34", label: "global edge regions" },
-    { value: "<80ms", label: "median API latency" },
-  ];
-
   const features = [
     {
       title: "Elastic compute",
@@ -41,7 +35,7 @@ export default function Home() {
           </div>
         </header>
 
-        <div className="grid gap-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] lg:items-center">
+        <div className="grid gap-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(360px,0.9fr)] lg:items-center">
           <div className="max-w-3xl">
             <span className="inline-flex rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">
               Unified cloud platform
@@ -68,22 +62,68 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/60 bg-white/80 p-6 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl">
-            <div className="rounded-[1.5rem] bg-slate-950 p-6 text-white">
-              <div className="flex items-center justify-between text-sm text-slate-300">
-                <span>moonbear.prod</span>
-                <span>Live capacity</span>
+          <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_24px_80px_rgba(15,23,42,0.08)]">
+            <div className="border-b border-slate-200 px-6 py-4">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm font-medium text-slate-500">Control plane</p>
+                  <p className="mt-1 text-xl font-semibold tracking-tight text-slate-950">
+                    One view for deploys, services, and infrastructure.
+                  </p>
+                </div>
+                <div className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
+                  All systems operational
+                </div>
               </div>
-              <div className="mt-10 space-y-6">
-                {stats.map((stat) => (
-                  <div key={stat.label} className="flex items-end justify-between gap-6 border-b border-white/10 pb-4 last:border-b-0 last:pb-0">
-                    <div>
-                      <p className="text-3xl font-semibold tracking-tight">{stat.value}</p>
-                      <p className="mt-1 text-sm text-slate-400">{stat.label}</p>
-                    </div>
-                    <div className="h-10 w-24 rounded-full bg-gradient-to-r from-sky-400/20 via-cyan-300/40 to-emerald-300/20" />
+            </div>
+
+            <div className="grid gap-4 p-6 sm:grid-cols-2">
+              <div className="rounded-[1.5rem] bg-slate-950 p-5 text-white sm:col-span-2">
+                <div className="flex items-start justify-between gap-6">
+                  <div>
+                    <p className="text-sm text-slate-400">Production environment</p>
+                    <p className="mt-3 text-3xl font-semibold tracking-tight">moonbear-core</p>
+                    <p className="mt-3 max-w-sm text-sm leading-6 text-slate-300">
+                      Deploy, monitor, and scale from a single interface designed to stay calm under load.
+                    </p>
                   </div>
-                ))}
+                  <div className="grid gap-2 text-right text-sm text-slate-300">
+                    <span>12 active services</span>
+                    <span>4 regions online</span>
+                    <span>Zero manual ops</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-[1.5rem] bg-slate-50 p-5">
+                <p className="text-sm font-medium text-slate-500">Deploy velocity</p>
+                <p className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">2 min</p>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  Average time from merge to production-ready rollout.
+                </p>
+              </div>
+
+              <div className="rounded-[1.5rem] bg-slate-50 p-5">
+                <p className="text-sm font-medium text-slate-500">Infrastructure model</p>
+                <p className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">API-first</p>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  Every environment, service, and policy is programmable.
+                </p>
+              </div>
+
+              <div className="rounded-[1.5rem] border border-slate-200 p-5 sm:col-span-2">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-medium text-slate-500">Current rollout</p>
+                    <p className="mt-2 text-lg font-medium text-slate-950">
+                      Edge API cluster upgrade progressing smoothly.
+                    </p>
+                  </div>
+                  <p className="text-sm font-medium text-slate-500">84%</p>
+                </div>
+                <div className="mt-4 h-2 overflow-hidden rounded-full bg-slate-100">
+                  <div className="h-full w-[84%] rounded-full bg-slate-950" />
+                </div>
               </div>
             </div>
           </div>
