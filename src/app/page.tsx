@@ -43,6 +43,8 @@ const pricingTiers = [
     benefits: [
       "1 bear",
       "10,000 deletions per month",
+      "1GB/month transfer quota",
+      "One bear included",
       "Deletes common document and image formats: .txt, .pdf, .docx, .jpg, .png",
       "Console access",
       "API access",
@@ -57,6 +59,8 @@ const pricingTiers = [
     benefits: [
       "2 bears",
       "100,000 deletions per month",
+      "2GB/month transfer quota",
+      "Two bears included",
       "Deletes documents, media, and data exports: .txt, .pdf, .docx, .jpg, .png, .csv, .json, .zip",
       "Console access",
       "API access",
@@ -71,6 +75,8 @@ const pricingTiers = [
     benefits: [
       "Unlimited bears",
       "Unlimited deletion volume",
+      "Unlimited transfer quota",
+      "Unlimited bears",
       "Deletes all supported file types, including regulated and archival formats",
       "Console access",
       "API access",
