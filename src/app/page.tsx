@@ -111,6 +111,12 @@ const customerTestimonials = [
     role: "Chief Compliance Officer",
     company: "Crescent Health Data Co.",
   },
+  {
+    quote: "This product saved my life and my marriage",
+    name: "Emily Randazzo",
+    role: "Customer",
+    company: "",
+  },
 ];
 
 export default function Home() {
@@ -284,7 +290,7 @@ export default function Home() {
                   What Customers Are Saying
                 </p>
                 <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
-                  When security, compliance, reliability, and performance matter, don't gamble with your data. Choose Moonbear.
+                  When security, compliance, reliability, and performance matter, don&apos;t gamble with your data. Choose Moonbear.
                 </p>
               </div>
 
