@@ -157,12 +157,6 @@ export default function Home() {
                   href="#pricing"
                   className="inline-flex h-12 items-center justify-center rounded-full border border-slate-200 bg-white px-6 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
                 >
-                  Sign Up For Newsletter
-                </a>
-                <a
-                  href="#pricing"
-                  className="inline-flex h-12 items-center justify-center rounded-full border border-slate-200 bg-white px-6 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
-                >
                   View pricing
                 </a>
               </div>
