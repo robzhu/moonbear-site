@@ -111,12 +111,6 @@ const customerTestimonials = [
     role: "Chief Compliance Officer",
     company: "Crescent Health Data Co.",
   },
-  {
-    quote: "This product saved my life and my marriage",
-    name: "Emily Randazzo",
-    role: "Customer",
-    company: "",
-  },
 ];
 
 export default function Home() {
