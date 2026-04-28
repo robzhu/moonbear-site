@@ -111,6 +111,12 @@ const customerTestimonials = [
     role: "Chief Compliance Officer",
     company: "Crescent Health Data Co.",
   },
+  {
+    quote: "I don't understand what makes this special",
+    name: "Phil Lebraun",
+    role: "Customer",
+    company: "",
+  },
 ];
 
 export default function Home() {
@@ -306,7 +312,7 @@ export default function Home() {
                       <footer className="mt-6 sm:mt-8">
                         <p className="text-sm font-semibold text-slate-950">{t.name}</p>
                         <p className="mt-1 text-sm text-slate-600">
-                          {t.role}, {t.company}
+                          {[t.role, t.company].filter(Boolean).join(", ")}
                         </p>
                       </footer>
                     </blockquote>
