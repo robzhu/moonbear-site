@@ -151,7 +151,7 @@ export default function Home() {
                   href="#overview"
                   className="inline-flex h-12 items-center justify-center rounded-full bg-slate-950 px-6 text-sm font-medium text-white transition hover:bg-slate-800"
                 >
-                  Explore the platform
+                  Contact sales
                 </a>
                 <a
                   href="#pricing"
